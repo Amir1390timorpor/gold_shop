@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="fa" dir="rtl">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>فروشگاه طلای زرین</title>
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+  <header class="container">
+    <h1>فروشگاه طلای زرین</h1>
+    <nav>
+      <a href="#products">محصولات</a>
+      <a href="#about">درباره ما</a>
+      <a href="#contact">تماس</a>
+    </nav>
+  </header>
+
+  <section class="hero">
+    <div class="container">
+      <h2>طلای ۱۸ عیار | ارسال به سراسر کشور</h2>
+      <p>جدیدترین مدل‌های انگشتر، گردنبند و دستبند</p>
+      <a class="btn" href="#products">مشاهده محصولات</a>
+    </div>
+  </section>
+
+  <main class="container">
+    <section id="products">
+      <h3>محصولات</h3>
+      <div class="grid">
+        <article class="card">
+          <img src="https://via.placeholder.com/400x300" alt="انگشتر طلا" />
+          <h4>انگشتر طلا</h4>
+          <p>طلای ۱۸ عیار، وزن حدودی ۳ گرم</p>
+          <button onclick="addToCart('انگشتر طلا')">افزودن به سبد</button>
+        </article>
+        <article class="card">
+          <img src="https://via.placeholder.com/400x300" alt="گردنبند طلا" />
+          <h4>گردنبند طلا</h4>
+          <p>زنجیر ظریف، مناسب هدیه</p>
+          <button onclick="addToCart('گردنبند طلا')">افزودن به سبد</button>
+        </article>
+        <article class="card">
+          <img src="https://via.placeholder.com/400x300" alt="دستبند طلا" />
+          <h4>دستبند طلا</h4>
+          <p>مدل اسپرت، مقاوم</p>
+          <button onclick="addToCart('دستبند طلا')">افزودن به سبد</button>
+        </article>
+      </div>
+      <p class="cart">🛒 سبد خرید: <span id="cart-count">0</span> مورد</p>
+    </section>
+
+    <section id="about">
+      <h3>درباره ما</h3>
+      <p>فروشگاه طلای زرین با بیش از ۲۰ سال سابقه، ارائه‌دهنده‌ی طلا و جواهرات اصل با فاکتور معتبر است.</p>
+    </section>
+
+    <section id="contact">
+      <h3>تماس با ما</h3>
+      <form id="order-form">
+        <label>نام و نام خانوادگی</label>
+        <input type="text" id="name" required />
+        <label>شماره تماس</label>
+        <input type="tel" id="phone" required />
+        <label>آدرس</label>
+        <textarea id="address" rows="3" required></textarea>
+        <button type="submit">ثبت سفارش</button>
+      </form>
+    </section>
+  </main>
+
+  <footer>
+    <div class="container">
+      <small>© ۲۰۲۵ فروشگاه طلای زرین</small>
+    </div>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+</html>
